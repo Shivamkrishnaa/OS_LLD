@@ -1,26 +1,22 @@
 package StackInterface;
 
+import java.util.List;
+
 public class Client {
+    public static void someMethod(Stack s) {
+        s.push(1);
+        s.push(2);
+        s.push(3);
+        s.peek();
+        s.pop();
+        s.peek();
+        s.push(4);
+        s.peek();
+    }
     public static void main(String[] args) {
         ArrayStack items = new ArrayStack();
         LinkedListStack llItems = new LinkedListStack();
-        llItems.push(1);
-        llItems.push(2);
-        llItems.push(3);
-        llItems.peek();
-        llItems.pop();
-        llItems.peek();
-        llItems.push(4);
-        llItems.peek();
-
-
-        items.push(1);
-        items.push(2);
-        items.push(3);
-        items.peek();
-        items.pop();
-        items.peek();
-        items.push(4);
-        items.peek();
+        someMethod(items);
+        someMethod(llItems);
     }
 }

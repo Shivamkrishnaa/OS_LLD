@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class ArrayStack implements Stack{
     ArrayList<Integer> items = new ArrayList<>();
     public int peek() {
-        System.out.print("Item ->");
+        System.out.print("Peek Array Stack ->");
         Integer item = items.get(items.size()-1);
         System.out.println(item);
         return item;
