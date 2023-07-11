@@ -14,8 +14,8 @@ public class Client {
         s.peek();
     }
     public static void main(String[] args) {
-        ArrayStack items = new ArrayStack();
-        LinkedListStack llItems = new LinkedListStack();
+        Stack items = new ArrayStack();
+        Stack llItems = new LinkedListStack();
         someMethod(items);
         someMethod(llItems);
     }
