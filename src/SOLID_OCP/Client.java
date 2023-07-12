@@ -19,7 +19,7 @@ public class Client {
         // Easily added new feature without modifying existing functions makeSound and fly
         someMethod(new Peacock("Lord shen"));
         // Adding penguin throws error as penguins cant fly
-        someMethod(new Penguin("Pingu"));
+//        someMethod(new Penguin("Pingu"));
 
 
         // Created new Abstract class Flyable bird which extends bird, and crow class extend flyable
