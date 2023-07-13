@@ -15,13 +15,19 @@ public class Client {
         registry.save(juneBatch);
         registry.save(avgBatch);
 
-        Student s = registry.get("B2");
-        s.setName("Shivam"); s.setId(1);
+        Student b2 = registry.get("B2");
+        Student shiv = b2.clone();
+        shiv.setName("Shiv"); shiv.setId(1);
 
         Student s1 = registry.get("A1");
-        s1.setName("Krishna"); s.setId(2);
-
-
-
+        Student krishna = s1.clone();
+        krishna.setName("Krishna"); krishna.setId(2);
+        /*
+            Create prototype object
+            Store in registry
+            Get prototype from map
+            create clone(deep copy) of prototype
+            update the value
+        */
     }
 }
