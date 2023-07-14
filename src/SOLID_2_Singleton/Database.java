@@ -2,9 +2,7 @@ package SOLID_2_Singleton;
 
 public class Database implements Runnable{
     private static Database db_connection = null;
-    private Object Database() {
-        return new Object();
-    }
+    private Database() { }
     public static Database getConnection(){
         synchronized(Database.class) { // this works
 //        synchronized(db_connection) { // this doesn't work why
