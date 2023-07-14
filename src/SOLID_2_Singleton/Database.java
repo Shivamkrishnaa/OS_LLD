@@ -6,7 +6,8 @@ public class Database implements Runnable{
         return new Object();
     }
     public static Database getConnection(){
-        synchronized(db_connection) {
+        synchronized(Database.class) { // this works
+//        synchronized(db_connection) { // this doesn't work why
             if (db_connection != null) {
                 db_connection = new Database();
             }
