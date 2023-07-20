@@ -5,10 +5,12 @@ import java.util.List;
 
 public class Amazon {
     private List<OrderPlacedSubscriber> orderPlacedSubscribers;
+    private List<OrderCancelledSubscriber> orderCancelledSubscribers;
     private static Amazon instance;
 
     private Amazon() {
        orderPlacedSubscribers = new ArrayList<>();
+       orderCancelledSubscribers = new ArrayList<>();
     }
     public static Amazon getInstance() {
         if (instance == null) {
@@ -26,6 +28,12 @@ public class Amazon {
     public void deRegisterSubscriber(OrderPlacedSubscriber orderPlacedSubscriber) {
         this.orderPlacedSubscribers.remove(orderPlacedSubscriber);
     }
+    public void registerOrderCancelledSubscriber(OrderCancelledSubscriber orderCancelledSubscriber) {
+        this.orderCancelledSubscribers.add(orderCancelledSubscriber);
+    }
+    public void deRegisterOrderCancelledSubscriber(OrderCancelledSubscriber orderCancelledSubscriber) {
+        this.orderCancelledSubscribers.remove(orderCancelledSubscriber);
+    }
     public void orderPlaces() {
         // customer notifier.notify
         // WMSNotifier.notify
@@ -34,5 +42,10 @@ public class Amazon {
             orderPlacesSubscribers.orderPlaceEvent();
         }
 
+    }
+    public void orderCancel() {
+        for (OrderCancelledSubscriber orderCancelledSubscriber: orderCancelledSubscribers) {
+            orderCancelledSubscriber.orderCanceled();
+        }
     }
 }

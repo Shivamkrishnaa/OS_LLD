@@ -12,8 +12,12 @@ public class Client {
         new InvoiceGenerator();
         WarehouseMSNotifier ws = new WarehouseMSNotifier();
         a.orderPlaces();
-
+        a.orderCancel();
         a.deRegisterSubscriber(ws);
+        a.deRegisterOrderCancelledSubscriber(ws);
+
+
         a.orderPlaces();
+        a.orderCancel();
     }
 }
