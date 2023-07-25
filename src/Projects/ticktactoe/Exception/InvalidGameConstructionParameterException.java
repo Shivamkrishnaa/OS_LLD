@@ -1,4 +1,4 @@
-package Projects.tictactoe.Exception;
+package Projects.ticktactoe.Exception;
 
 public class InvalidGameConstructionParameterException extends Exception {
     public InvalidGameConstructionParameterException() {

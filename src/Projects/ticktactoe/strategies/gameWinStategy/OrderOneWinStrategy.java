@@ -1,8 +1,8 @@
-package Projects.tictactoe.strategies.gameWinStategy;
+package Projects.ticktactoe.strategies.gameWinStategy;
 
-import Projects.tictactoe.models.Board;
-import Projects.tictactoe.models.Cell;
-import Projects.tictactoe.models.Player;
+import Projects.ticktactoe.models.Cell;
+import Projects.ticktactoe.models.Player;
+import Projects.ticktactoe.models.Board;
 
 import java.util.HashMap;
 

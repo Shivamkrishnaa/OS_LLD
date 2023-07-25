@@ -1,4 +1,4 @@
-package Projects.tictactoe;
+package Projects.ticktactoe;
 
 public class PlayerFactory {
 }

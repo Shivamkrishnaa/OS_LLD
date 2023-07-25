@@ -1,6 +1,6 @@
-package Projects.tictactoe.models;
+package Projects.ticktactoe.models;
 
-import Projects.tictactoe.strategies.botPlayingStrategy.BotPlayingStrategy;
+import Projects.ticktactoe.strategies.botPlayingStrategy.BotPlayingStrategy;
 
 public class Bot extends Player {
     private BotLevel botLevel;

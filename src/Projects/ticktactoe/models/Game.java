@@ -1,8 +1,8 @@
-package Projects.tictactoe.models;
+package Projects.ticktactoe.models;
 
-import Projects.tictactoe.Exception.InvalidGameConstructionParameterException;
-import Projects.tictactoe.strategies.gameWinStategy.GameWinStrategy;
-import Projects.tictactoe.strategies.gameWinStategy.OrderOneWinStrategy;
+import Projects.ticktactoe.Exception.InvalidGameConstructionParameterException;
+import Projects.ticktactoe.strategies.gameWinStategy.GameWinStrategy;
+import Projects.ticktactoe.strategies.gameWinStategy.OrderOneWinStrategy;
 
 import java.util.ArrayList;
 import java.util.HashSet;

@@ -1,4 +1,4 @@
-package Projects.tictactoe;
+package Projects.ticktactoe;
 
 public class Client {
     public static void main(String[] args) {
